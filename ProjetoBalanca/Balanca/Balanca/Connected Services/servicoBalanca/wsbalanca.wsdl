@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.gl2sistemas.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.gl2sistemas.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.gl2sistemas.com/">
+      <s:element name="SalvarPesoBalancaJanela">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dadosBalanca" type="tns:CadBalancaRegistraPesoDTOBalanca" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CadBalancaRegistraPesoDTOBalanca">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Erro" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPorJanela" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdUnidadeOperacional" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PlacaVeiculo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PesoBalancaEntrada" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PesoBalancaSaida" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SalvarPesoBalancaJanelaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SalvarPesoBalancaJanelaResult" type="tns:CadBalancaRegistraPesoDTOBalanca" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaBalancasCadastradas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dataEntradaPrevista" nillable="true" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="placaVeiculo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaBalancasCadastradasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaBalancasCadastradasResult" type="tns:ArrayOfCadBalancaDTOBalanca" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCadBalancaDTOBalanca">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CadBalancaDTOBalanca" nillable="true" type="tns:CadBalancaDTOBalanca" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CadBalancaDTOBalanca">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Erro" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPorJanela" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdUnidadeOperacional" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PlacaVeiculo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Motorista" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PesoEntrada" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PesoSaida" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PesoAcondicionado" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PesoLiquido" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataEntradaPrevista" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DataEntradaReal" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SalvarPesoBalancaJanelaSoapIn">
+    <wsdl:part name="parameters" element="tns:SalvarPesoBalancaJanela" />
+  </wsdl:message>
+  <wsdl:message name="SalvarPesoBalancaJanelaSoapOut">
+    <wsdl:part name="parameters" element="tns:SalvarPesoBalancaJanelaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListaBalancasCadastradasSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaBalancasCadastradas" />
+  </wsdl:message>
+  <wsdl:message name="ListaBalancasCadastradasSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaBalancasCadastradasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsBalancaSoap">
+    <wsdl:operation name="SalvarPesoBalancaJanela">
+      <wsdl:input message="tns:SalvarPesoBalancaJanelaSoapIn" />
+      <wsdl:output message="tns:SalvarPesoBalancaJanelaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaBalancasCadastradas">
+      <wsdl:input message="tns:ListaBalancasCadastradasSoapIn" />
+      <wsdl:output message="tns:ListaBalancasCadastradasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsBalancaSoap" type="tns:wsBalancaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SalvarPesoBalancaJanela">
+      <soap:operation soapAction="http://www.gl2sistemas.com/SalvarPesoBalancaJanela" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaBalancasCadastradas">
+      <soap:operation soapAction="http://www.gl2sistemas.com/ListaBalancasCadastradas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsBalancaSoap12" type="tns:wsBalancaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SalvarPesoBalancaJanela">
+      <soap12:operation soapAction="http://www.gl2sistemas.com/SalvarPesoBalancaJanela" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaBalancasCadastradas">
+      <soap12:operation soapAction="http://www.gl2sistemas.com/ListaBalancasCadastradas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsBalanca">
+    <wsdl:port name="wsBalancaSoap" binding="tns:wsBalancaSoap">
+      <soap:address location="http://localhost:17746/wsbalanca.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsBalancaSoap12" binding="tns:wsBalancaSoap12">
+      <soap12:address location="http://localhost:17746/wsbalanca.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

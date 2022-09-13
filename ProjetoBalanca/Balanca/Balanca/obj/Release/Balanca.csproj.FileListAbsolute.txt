@@ -1,0 +1,10 @@
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\bin\Release\Balanca.exe.config
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\bin\Release\Balanca.exe
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\bin\Release\Balanca.pdb
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Release\Balanca.Properties.Resources.resources
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Release\Balanca.Terminal.resources
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Release\Balanca.csproj.GenerateResource.cache
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Release\Balanca.csproj.CoreCompileInputs.cache
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Release\Balanca.exe
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Release\Balanca.pdb
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Release\Balanca.csprojAssemblyReference.cache

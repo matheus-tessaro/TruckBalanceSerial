@@ -1,0 +1,19 @@
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\bin\Debug\Balanca.exe.config
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\bin\Debug\Balanca.exe
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\bin\Debug\Balanca.pdb
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\obj\Debug\Balanca.csprojAssemblyReference.cache
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\obj\Debug\Balanca.Properties.Resources.resources
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\obj\Debug\Balanca.Terminal.resources
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\obj\Debug\Balanca.csproj.GenerateResource.cache
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\obj\Debug\Balanca.csproj.CoreCompileInputs.cache
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\obj\Debug\Balanca.exe
+C:\Users\Vinicius\Documents\Visual Studio 2017\Project\Balanca\Balanca\obj\Debug\Balanca.pdb
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Debug\Balanca.Properties.Resources.resources
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Debug\Balanca.Terminal.resources
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Debug\Balanca.csproj.GenerateResource.cache
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\bin\Debug\Balanca.exe.config
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\bin\Debug\Balanca.exe
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\bin\Debug\Balanca.pdb
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Debug\Balanca.exe
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Debug\Balanca.pdb
+C:\Repositorios\ProjetoBalanca\Balanca\Balanca\obj\Debug\Balanca.csprojAssemblyReference.cache
